@@ -1,0 +1,37 @@
+{
+  "name": "Demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib -d build",
+    "start": "npm run build && nodemon build/server.js",
+    "calculus": "nodemon --exec babel-node lib/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idmcalculus/Demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idmcalculus/Demo/issues"
+  },
+  "homepage": "https://github.com/idmcalculus/Demo#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "nodemon": "^1.19.1"
+  }
+}
